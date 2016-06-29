@@ -24,5 +24,9 @@ angular.module('myContacts.contacts', ['ngRoute', "firebase"])
 	var rootRef = firebase.database().ref();
 
 	$scope.contacts = $firebaseArray(rootRef);
-	console.log($scope.contacts);
+	//console.log($scope.contacts);
+
+	$scope.showAddForm = function(){
+		$scope.addFormShow = true;
+	}
 }]);
