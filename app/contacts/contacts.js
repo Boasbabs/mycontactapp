@@ -14,11 +14,11 @@ angular.module('myContacts.contacts', ['ngRoute', "firebase"])
 
 .controller('ContactsCtrl', ["$scope", "$firebaseArray", "$firebaseObject", function($scope, $firebaseArray, $firebaseObject) {
 	var config = {
-		apiKey : "F4qOLMiT9NJ9ap3jmjEZtWl7iTIIDg3QdO9rV0C7",
-		authDomain: "boasbabs-mycontactapp.firebaseio.com",
-		databaseURL: "https://boasbabs-mycontactapp.firebaseio.com"
-	};
-
+	    apiKey: "AIzaSyCgLpe0O8ivSvcmi8es-pHC5Pg2UDtKN9g",
+	    authDomain: "boasbabs-mycontactapp.firebaseapp.com",
+	    databaseURL: "https://boasbabs-mycontactapp.firebaseio.com",
+	    storageBucket: "boasbabs-mycontactapp.appspot.com",
+	  };
 	firebase.initializeApp(config);
 
 	var rootRef = firebase.database().ref();
